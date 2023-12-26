@@ -12,7 +12,7 @@ public class Reverse {
 		for (int i = right; i >= 0; i--){
 			System.out.print(s.charAt(i));
 			if ((i == left) || (i == (left + 1))){ 
-				x = s.charAt(i);
+				x = s.charAt(left);
 				}
 			left++;
 		}
