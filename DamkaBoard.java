@@ -6,15 +6,23 @@ public class DamkaBoard {
 		//// Put your code here
 		int x = Integer.parseInt(args[0]);
 		int i = 0;
+		int j = 0;
 		while (i < x){
 			if((i % 2) == 1) {
-				System.out.print(" ");
-			}
-			int j = 0;
+			j = 0;
 			while (j < x){
-				if (j ==x) System.out.print("*");
+				if (j ==x) System.out.print("*"); 
+				System.out.print(" *");
+				j++;
+			}
+			}
+			if((i % 2) == 0) {
+			j = 0;
+			while (j < x){
+				if (j ==x) System.out.print("*"); 
 				System.out.print("* ");
 				j++;
+			}
 			}
 				System.out.println("");
 				i++;
